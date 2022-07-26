@@ -5,6 +5,7 @@ import 'package:licores_app/pages/home/main_liquor_page.dart';
 import 'package:get/get.dart';
 import 'package:licores_app/pages/liquor/category_liquor_detail.dart';
 import 'package:licores_app/pages/liquor/popular_liquor_detail.dart';
+import 'package:licores_app/pages/splash/splash_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -26,7 +27,8 @@ class MyApp extends StatelessWidget {
       home: //MainLiquorPage()
            //PopularLiquorDetail()
            //CategoryLiquorDetail()
-            CartPage()
+            //CartPage()
+           SplashScreen(),
     );
   }
 }
