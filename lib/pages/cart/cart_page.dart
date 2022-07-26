@@ -1,6 +1,5 @@
 
 
-
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:licores_app/utils/colors.dart';
@@ -130,3 +129,4 @@ class CartPage extends StatelessWidget {
     );
   }
 }
+
