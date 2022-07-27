@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:licores_app/pages/cart/cart_page.dart';
+import 'package:licores_app/pages/home/home_page.dart';
 import 'package:licores_app/pages/home/liquor_page_body.dart';
 import 'package:licores_app/pages/home/main_liquor_page.dart';
 import 'package:get/get.dart';
@@ -26,9 +27,10 @@ class MyApp extends StatelessWidget {
       ),
       home: //MainLiquorPage()
            //PopularLiquorDetail()
-           CategoryLiquorDetail(),
+           //CategoryLiquorDetail(),
             //CartPage()
            //SplashScreen(),
+          HomePage(),
     );
   }
 }

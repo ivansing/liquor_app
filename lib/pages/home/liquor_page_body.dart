@@ -38,9 +38,11 @@ class _LiquorPageBodyState extends State<LiquorPageBody> {
     });
   }
 
+  // Get of rid of carbage collected
   @override
   void dispose(){
     pageController.dispose();
+    super.dispose();
   }
 
   @override
