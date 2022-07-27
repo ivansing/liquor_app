@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:licores_app/pages/cart/cart_page.dart';
 import 'package:licores_app/utils/colors.dart';
 import 'package:licores_app/utils/dimensions.dart';
 import 'package:licores_app/widgets/app_icon.dart';
@@ -113,14 +114,34 @@ class CategoryLiquorDetail extends StatelessWidget {
                     ],
                   ),
                 ),
-                Container(
-                  padding: EdgeInsets.only(top: Dimensions.height15, bottom: Dimensions.height20, left: Dimensions.width20, right: Dimensions.width20),
-                  child: BigText(text: "\$35.000 | Agregar ", color: Colors.white,),
-                  decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(Dimensions.radius20),
-                      color: Colors.purpleAccent
+
+                ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                    primary: Colors.purpleAccent
                   ),
+                  child:  Container(
+                    padding: EdgeInsets.only(top: Dimensions.height15, bottom: Dimensions.height20, left: Dimensions.width20, right: Dimensions.width20),
+                    child: BigText(text: "\$35.000 | Agregar ", color: Colors.white,),
+
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(Dimensions.radius20),
+                        color: Colors.purpleAccent,
+
+                    ),
+
+                  ),
+                  onPressed: () {
+
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => const CartPage()),
+
+                    );
+                  },
+
                 ),
+
+
               ],
             ),
           )

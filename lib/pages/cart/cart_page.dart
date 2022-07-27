@@ -27,11 +27,23 @@ class CartPage extends StatelessWidget {
               child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    AppIcon(icon: Icons.arrow_back,
-                        iconColor: Colors.white,
-                        backgroundColor: Colors.purpleAccent,
-                        iconSize: Dimensions.iconSize24
+
+                    ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                          primary: Colors.purpleAccent
+                      ),
+                      onPressed: () {
+                        Navigator.pop(context);
+                      },
+                      child:  AppIcon(icon: Icons.arrow_back,
+                          iconColor: Colors.white,
+                          backgroundColor: Colors.purpleAccent,
+                          iconSize: Dimensions.iconSize24
+                      ),
                     ),
+
+
+
                     SizedBox(width: Dimensions.width20*5,),
                     AppIcon(icon: Icons.home_outlined,
                         iconColor: Colors.white,

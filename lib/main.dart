@@ -26,9 +26,9 @@ class MyApp extends StatelessWidget {
       ),
       home: //MainLiquorPage()
            //PopularLiquorDetail()
-           //CategoryLiquorDetail()
+           CategoryLiquorDetail(),
             //CartPage()
-           SplashScreen(),
+           //SplashScreen(),
     );
   }
 }

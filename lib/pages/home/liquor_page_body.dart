@@ -122,7 +122,11 @@ class _LiquorPageBodyState extends State<LiquorPageBody> {
                         ),
                       ),
                       // Text container
+
+                      // Categories Main Container Card -------
+
                       Expanded(
+
                           child: Container(
                             height: Dimensions.listViewImgSize,
                             decoration: BoxDecoration(
