@@ -7,8 +7,13 @@ import 'package:get/get.dart';
 import 'package:licores_app/pages/liquor/category_liquor_detail.dart';
 import 'package:licores_app/pages/liquor/popular_liquor_detail.dart';
 import 'package:licores_app/pages/splash/splash_page.dart';
+import 'helper/dependencies.dart' as dep;
 
-void main() {
+Future<void> main() async {
+
+  // Init dependencies
+  WidgetsFlutterBinding.ensureInitialized();
+  await dep.init();
   runApp(const MyApp());
 }
 
