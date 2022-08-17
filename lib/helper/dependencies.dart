@@ -8,7 +8,7 @@ import 'package:licores_app/data/repository/popular_product_repo.dart';
 
 Future<void> init() async {
   // Init ApiClient
-  Get.lazyPut(() => ApiClient(appBaseUrl: "https://www.dbestech.com"));
+  Get.lazyPut(() =>  ApiClient(appBaseUrl: "https://mvs.bslmeiyu.com"));
 
   // Init all Repositories
   Get.lazyPut(() => PopularProductRepo(apiClient: Get.find()));
