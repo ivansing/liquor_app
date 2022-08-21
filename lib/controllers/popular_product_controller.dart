@@ -1,3 +1,5 @@
+import 'dart:convert';
+
 import 'package:get/get.dart';
 import 'package:licores_app/data/repository/popular_product_repo.dart';
 
@@ -17,13 +19,13 @@ class PopularProductController extends GetxController {
     Response response =  await popularProductRepo.getPopularProductList();
 
 
-    //print('got the produtcs');
+    print('got the produtcs');
     //if(response.statusCode == 200) {
 
       // Init to null not to repeat
       _popularProductList = [];
-      _popularProductList.addAll(Product.fromJson(response.body as Map<String, dynamic>).products);
-      //print(_popularProductList);
+      _popularProductList.addAll(Product.fromJson(jsonDecode(response.body)).products);
+      print(_popularProductList);
       update();
 
     /*} else {
