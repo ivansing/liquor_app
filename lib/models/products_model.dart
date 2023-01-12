@@ -52,7 +52,7 @@ class ProductModel {
 
   factory ProductModel.fromJson(Map<String, dynamic> json) {
     return ProductModel(
-        id: json['id'] != null ? (json['id'] as num?)?.toInt() : null,
+        id: json['id'] as int,
         name: json['name'] as String,
         description: json['description'] as String,
         price: json['price'] as int,

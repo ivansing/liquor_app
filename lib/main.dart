@@ -27,8 +27,8 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    /*PopularProductController controller = Get.find();
-    print(controller.getPopularProductList());*/
+    PopularProductController controller = Get.find();
+    print(controller.getPopularProductList());
     //Get.find<PopularProductController>().getPopularProductList();
 
     return GetMaterialApp(
